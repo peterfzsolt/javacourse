@@ -4,9 +4,10 @@ package polymorphism.shape;
 import java.util.*;
 
 public class RandomShapeGenerator {
-  private Random rand = new Random(47);
+  private Random rand = new Random(213);
   public Shape next() {
-    switch(rand.nextInt(3)) {
+    int i = rand.nextInt(3);
+	switch(i) {
       default:
       case 0: return new Circle();
       case 1: return new Square();
